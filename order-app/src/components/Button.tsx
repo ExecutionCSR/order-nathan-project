@@ -10,6 +10,6 @@ interface ButtonProps {
 
 export function Button(props : ButtonProps){
   return(
-    <button  className={props.className} onClick={props.onClick}>{props.title}</button>
+    <button  type="button" className={props.className} onClick={props.onClick}>{props.title}</button>
   )
 }
