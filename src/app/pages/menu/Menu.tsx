@@ -4,9 +4,7 @@ import { CadastroUsuario } from "../usuario/cadastroUsuario/CadastroUsuario";
 import './index.css';
 
 
-export const Menu = () => {
-
-
+export function Menu(){
     const [showElement, setShowElement] = useState(false)
 
     const showOrHide = () => {

@@ -1,8 +1,6 @@
-
 import { Routes } from "./routes";
-export const App =() => {
+export function App(){
   return (
-
      <Routes/>
   );
 }

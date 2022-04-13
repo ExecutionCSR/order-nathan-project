@@ -1,35 +1,31 @@
 import { useCallback, useState } from "react";
+import "./csLogin.css";
+import { Link } from "react-router-dom";
 
 
-export const Login = () => {
-    const [email,setEmail] = useState('')
-    const [password,setPassword] = useState('')
-    
-    const handleEntrar = useCallback(() => {
-        if(email === ''  || password === '') return;
-        console.log(email)
-        console.log(password)
-    }, [email, password])
+export function Login() {
     
     return (
         <div>
-            <form>
+            <form className="container2" method="get">
+                <h3>Yolanda Sys</h3>
                 <label className="email">
                     <span>Email </span>
-                    <input value={email} onChange={e => setEmail(e.target.value)}/>
+                    <input type="email" />
                 </label>
 
                 <label className="senha">
                     <span>Senha </span>
-                    <input type="password" value={password} onChange={e => setPassword(e.target.value)}/>
+                    <input type="password" />
                 </label>
-
-                <button className="entrar" type="button" onClick={handleEntrar}>
-                    Entrar
-                </button>
-                <button className="registrar" type="button">
-                    Registrar
-                </button>
+              
+               
+                    <Link to='/menu' className="btn">
+                    <button className="btn" type="button">
+                        ENTRAR
+                    </button>
+                    </Link>
+                
             </form>
         </div>
     );

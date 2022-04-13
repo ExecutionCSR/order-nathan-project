@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes as Switch, Navigate } from "react-router-d
 
 import { Dashboard, Login, CadastroUsuario, Menu} from '../pages'; 
 
-export const Routes = () => {
+export function Routes(){
 
     return (
         <BrowserRouter>
