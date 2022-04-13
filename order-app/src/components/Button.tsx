@@ -1,6 +1,6 @@
 import React from "react";
 
-interface Props {
+interface ButtonProps {
   title: string,
   onClick: () => void,
   className: string,
@@ -8,7 +8,7 @@ interface Props {
 
 
 
-export function Button(props : Props){
+export function Button(props : ButtonProps){
   return(
     <button  className={props.className} onClick={props.onClick}>{props.title}</button>
   )
