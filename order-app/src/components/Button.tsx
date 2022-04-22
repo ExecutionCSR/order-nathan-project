@@ -2,8 +2,8 @@ import React from "react";
 
 interface ButtonProps {
   title: string,
-  onClick: () => void,
-  className: string,
+  onClick?: () => void,
+  className?: string,
 }
 
 
